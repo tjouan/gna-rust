@@ -1,0 +1,7 @@
+[package]
+name = "gna"
+version = "0.1.0"
+authors = ["Thibault Jouan <tj@a13.fr>"]
+
+[dependencies]
+getopts = "~0.2"
