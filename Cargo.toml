@@ -5,3 +5,4 @@ authors = ["Thibault Jouan <tj@a13.fr>"]
 
 [dependencies]
 getopts = "~0.2"
+glob    = "~0.2"

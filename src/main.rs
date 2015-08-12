@@ -1,4 +1,5 @@
 mod cli;
+mod repo_finder;
 mod run_control;
 
 fn main() {
