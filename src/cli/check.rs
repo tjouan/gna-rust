@@ -1,3 +1,8 @@
+use repository;
+use run_control;
+
 pub fn run() {
-    println!("CHECK!");
+    for e in run_control::repos().iter() {
+        repository::check(e);
+    }
 }
