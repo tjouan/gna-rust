@@ -27,8 +27,7 @@ pub fn repos() -> Vec<String> {
     let reader = BufReader::new(file(OpenOptions::new().read(true)));
 
     reader.lines().map(|line| {
-        let line = line.unwrap();
-        line
+        line.unwrap()
     }).collect()
 }
 
