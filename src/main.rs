@@ -1,7 +1,6 @@
-mod cli;
-mod repository;
-mod repo_finder;
-mod run_control;
+extern crate gna;
+
+use gna::cli;
 
 fn main() {
     cli::run(std::env::args().collect());
