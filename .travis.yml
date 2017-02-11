@@ -5,3 +5,10 @@ notifications:
     - tj+travis_gna_rust@a13.fr
 
 language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
