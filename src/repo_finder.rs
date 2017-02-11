@@ -9,3 +9,14 @@ pub fn find(path: &str) -> Vec<String> {
         entry.display().to_string()
     }).collect()
 }
+
+
+#[cfg(test)]
+mod tests {
+    use super::find;
+
+    #[test]
+    fn returns_git_repositories_paths() {
+        assert_eq!(vec![".git"], find("."))
+    }
+}

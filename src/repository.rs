@@ -26,3 +26,14 @@ pub fn check(path: &str) {
     git_exec(path, &["symbolic-ref", "--short", "HEAD"]);
     git_exec(path, &["status", "--porcelain"]);
 }
+
+
+#[cfg(test)]
+mod tests {
+    use super::git_exec;
+
+    #[test]
+    fn executes_given_git_command() {
+        git_exec(".", &["ls-files", ".gitignore"]);
+    }
+}
