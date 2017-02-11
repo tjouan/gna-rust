@@ -1,0 +1,7 @@
+sudo: required
+dist: trusty
+notifications:
+  email:
+    - tj+travis_gna_rust@a13.fr
+
+language: rust
